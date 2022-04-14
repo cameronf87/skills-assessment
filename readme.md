@@ -11,9 +11,11 @@ This repo is a working example of the front-end skills assessment forked from th
 Note: All of the referenced files are relative to the download path and can be ran without a local development server.
 
 ## Considerations
-This exercise is a great way to get down to the basics, strip away the unnecessary components, libraries and resets. Leaving clean, light easy to read code, under 400 total lines of code!
+This exercise is a great way to get down to the basics, strip away the unnecessary components, libraries and resets. Leaving clean, easy to read code, all under 400 total lines!
 
 In the future, and given more time I would look to find a fully functional solution using no JavaScript (HTML/CSS only).
+
+Also, if using a local development server I would create the list of contacts and save them into a .json file, then parse the file and output the HTML using reusable code blocks.
 
 ---
 
