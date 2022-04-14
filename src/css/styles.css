@@ -69,9 +69,16 @@ header.header-container {
 .contact:hover {
     background-color: #484848;
 }
+.contact:hover .divider {
+    display: none;
+    visibility: hidden;
+}
 .contacts-table:hover .contact:not(:hover) {
     background-color: #070707;
     color: #565656;
+}
+.contact:hover .status {
+    opacity: 1;
 }
 .contact:hover .phone a, .contact:hover .email{
     color: #00f6ff;
@@ -80,21 +87,6 @@ header.header-container {
 }
 .contact:hover .name, .contact:hover .phone {
     color: #ffffff;
-}
-.contact:hover .active {
-    position: absolute;
-    display: block;
-    z-index: 1;
-    width: 133px;
-    margin-top: 15px;
-    margin-left: -25px;
-    padding: 10px;
-    padding-left: 25px;
-    background: #484848;
-}
-.contact:hover .divider {
-    display: none;
-    visibility: hidden;
 }
 .status {
     width: 10%;
@@ -148,6 +140,20 @@ header.header-container {
 }
 .active {
     display: none;
+}
+.contact:hover .active {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 133px;
+    margin-top: 15px;
+    margin-left: -25px;
+    padding: 10px;
+    padding-left: 25px;
+    background: #484848;
+}
+.contact:last-child .active {
+    margin-top: -72px;
 }
 .active-address {
     display: block;
