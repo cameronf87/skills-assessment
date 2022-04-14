@@ -5,13 +5,13 @@ This repo is a working example of the front-end skills assessment forked from th
 ## Getting Started
 
 1. Download the .zip file [here](https://github.com/cameronf87/skills-assessment/archive/refs/heads/master.zip).
-2. After downloading, unzip the file, and open the newly created folder. 
-3. Run index.html inside of the downloaded folder. 
+2. After downloading, unzip the file, and open the newly created folder.
+4. Run index.html inside of the '/src' folder.
 
 Note: All of the refereced files are relative to the download path and can be ran without a local development server.
 
 ## Considerations
-This exercise is a great way to get down to the basics, strip away the unnessessary components, libraries or resets. Leaving clean, light easy to read code, under 400 total lines of code!
+This exercise is a great way to get down to the basics, strip away the unnessessary components, libraries and resets. Leaving clean, light easy to read code, under 400 total lines of code!
 
 In the future, and given more time I would look to find a fully functional solution using no javascript (HTML/CSS only).
 
