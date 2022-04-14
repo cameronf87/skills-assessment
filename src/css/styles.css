@@ -55,6 +55,10 @@ header.header-container {
 .contacts-table:hover .status {
     opacity: 0.5;
 }
+.contacts-table:hover .contact:not(:hover) {
+    background-color: #070707;
+    color: #565656;
+}
 .contact {
     height: 37px;
     margin: auto;
@@ -73,10 +77,6 @@ header.header-container {
     display: none;
     visibility: hidden;
 }
-.contacts-table:hover .contact:not(:hover) {
-    background-color: #070707;
-    color: #565656;
-}
 .contact:hover .status {
     opacity: 1;
 }
@@ -87,6 +87,23 @@ header.header-container {
 }
 .contact:hover .name, .contact:hover .phone {
     color: #ffffff;
+}
+.contact:hover .active {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 133px;
+    margin-top: 15px;
+    margin-left: -25px;
+    padding: 10px;
+    padding-left: 25px;
+    background: #484848;
+}
+.contact:last-child .active {
+    margin-top: -72px;
+}
+.active {
+    display: none;
 }
 .status {
     width: 10%;
@@ -123,37 +140,17 @@ header.header-container {
     top: -12px;
     left: 70px;
 }
-.email {
+.email, .phone, .phone a {
     position: relative;
-}
-.phone {
-    position: relative;
-    display: none;
-}
-.email, .phone a{
     color: #565656;
     text-decoration: none;
+}
+.phone {
+    display: none;
 }
 .info {
     flex: 55%;
     margin: auto;
-}
-.active {
-    display: none;
-}
-.contact:hover .active {
-    position: absolute;
-    display: block;
-    z-index: 1;
-    width: 133px;
-    margin-top: 15px;
-    margin-left: -25px;
-    padding: 10px;
-    padding-left: 25px;
-    background: #484848;
-}
-.contact:last-child .active {
-    margin-top: -72px;
 }
 .active-address {
     display: block;
